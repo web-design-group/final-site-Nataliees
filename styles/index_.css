@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333333;
+    background: #F8F8F8;
+    max-width: 85rem;
+    width: 100%;
+    font-weight: 400;    
+    margin: 0 auto;        
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+header {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EFA300;
+}
+
+h1 {
+    color: #EFA300;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 6.25rem; 
+    text-transform: uppercase;
+    text-align: right;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 6.25rem 0 3.125rem 7.1875rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+    font-style: italic;
+    text-align: left;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0 0 2.1875rem 0;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.first_block {
+    margin-top: 6.25rem;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.text_block {
+    max-width: 56.25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+}
+
+.carousel {
+    max-width: 56.25rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.fpicture {
+    max-width: 100%;
+    max-height: 31.25rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.ftext {
+    max-width: 27.5rem;
+    margin-left: 1.25rem;
+    z-index: 1000;
+}
+
+.images {
+    display: grid;
+    gap: 1.25rem;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(27.5rem, 1fr));
+}
+
+.images img:nth-child(1) {
+    grid-row: span 2;
+}
+
+.images img:nth-child(3) {
+    grid-row: span 2;
+}
+
+.images img:nth-child(4) {
+    grid-row: span 2;
+}
+
+
+.fifth_block {
+    margin-bottom: 6.25rem;
+}
+
+.pic-container {
+    max-width: 85rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pic {
+    width: 100%;
+    height: auto;
+    max-height: 29.9375rem;
+    object-fit: cover;
+    display: block;
+}
+
+.logo {
+    max-width: 13.125rem; 
+    max-height: 7.25rem; 
+}
+
+.icons {
+    max-width: 20.3125rem; 
+    max-height: 2.5rem; 
+    margin: 1.875rem 0 0 0; 
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.btn {
+    display: inline-block;
+    background: #001AFF;
+    color: #F8F8F8;
+    padding: 1.25rem 6.5625rem;
+    margin-top: 1.875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #EFA300;
+    color: #F8F8F8;
+}
+
+.btn:active {
+    background: #F8F8F8;
+    color: #001AFF;
+    outline: 5px solid #001AFF;
+}
+
+
+.title, .accordion-header {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #333;
+    padding: 0.525rem 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.title { 
+    margin: 1.25rem 0 0.525rem 0;
+}
+
+.accordion-header { 
+    cursor: pointer;
+}
+
+.desc {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+input[type="checkbox"] { display: none; }
+
+.accordion-content {
+    display: none;
+    padding: 0.525rem 0;
+}
+
+input[type="checkbox"]:checked + .accordion-header + .accordion-content {
+    display: block;
+}
+
+input[type="checkbox"]:checked + .accordion-header .arrow {
+    transform: rotate(180deg);
+}
+
+.arrow {
+    float: right;
+    transition: transform 0.3s;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 6.25rem;
+    margin-bottom: 1.25rem;
+    gap: 2rem;
+}
+
+.logo {
+    max-width: 13.125rem;
+    height: auto;
+    flex: 0 0 auto;
+}
+
+.foot {
+    text-align: left;
+    text-transform: none;
+}
+
+.flinks1, .flinks2, .flinks3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    font-weight: 400;
+    gap: 0.525rem;
+    text-align: left;
+    flex: 1 1 18.75rem;
+}
+
+.flinks1 {
+    text-transform: uppercase;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1.875rem;
+}
+
+.icon:hover {
+    color: #EFA300;
+}

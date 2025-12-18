@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title> UPCYCLE! </title>
+        <link rel="stylesheet" href="styles/order_.css">
+    </head>
+
+    <body>
+        <div class="modal" id="thankYouModal">
+            <div class="modal-content thank-you-modal">
+                
+                <h2 class="thank-you-title">Спасибо!</h2>
+                
+                <div class="thank-you-text">
+                    <p>Заказ <span class="order-number">#2567</span> создан и оплачен. Дизайнер приступит к работе в течение 24 часов. Мы уведомим вас о готовности СМС-сообщением.</p>
+                </div>
+                
+                <button class="btn close-modal-btn">Закрыть</button>
+            </div>
+        </div>
+
+        <header>
+            <a href="index.html"> Главная </a>
+            <a href="blog.html"> Наш блог </a>
+            <a href="order.html"> Создать проект </a>
+            <a href="shop.html"> Магазин </a>
+            <a href="#"> Корзина </a>
+            <a href="#"> Личный кабинет </a>
+        </header>
+        
+        <main>
+            <h2> создай свой проект </h2>
+            
+            <div class="order_form">
+                <label for="item-type">Тип вещи</label>
+                <select id="item-type" class="simple-select">
+                    <option> Выберите из списка </option>
+                    <option> Худи </option>
+                    <option> Кожанка </option>
+                    <option> Ботинки / кроссовки </option>
+                    <option> Джинсы / джинсовка </option>
+                    <option> Предметы интерьера </option>
+                    <option> Мерч </option>
+                    <option> Другое </option>
+                </select>
+
+                <label for="photo">Фото *</label>
+                <label for="photo" class="file-label">
+                    <span class="file-button">Выберите файл</span>
+                    <span class="file-name">Файл не выбран</span>
+                    <input type="file" id="photo" accept="image/*">
+                </label>
+
+                <div></div>
+                <p class="note">* Чтобы наш дизайнер мог точно оценить вашу вещь и создать качественный эскиз, пожалуйста, прикрепите фотографию в хорошем качестве при дневном свете</p>
+
+                <label for="style">Стиль</label>
+                <select id="style" class="simple-select">
+                    <option> Выберите из списка </option>
+                    <option> Гранж / Винтаж </option>
+                    <option> Стрит-арт </option>
+                    <option> Минимализм </option>
+                    <option> Художественная графика </option>
+                    <option> Киберпанк / футуризм </option>
+                    <option> Бохо </option>
+                    <option> Другое </option>
+                </select>
+
+                <label for="wishes">Особые пожелания</label>
+                <textarea id="wishes" placeholder="Опишите ваши пожелания..."></textarea>
+
+                <button class="btn open-modal-btn" id="submit-project-btn">Оформить заказ</button>
+            </div>
+        </main>
+
+        <footer>
+            <img src="img/logo.png" alt="Логотип" class="logo">
+            <div class="flinks1">
+                <a href="index.html"> Главная </a>
+                <a href="blog.html"> Наш блог </a>
+                <a href="order.html"> Создать проект </a>
+                <a href="shop.html"> Магазин </a>
+                <a href="#"> Корзина </a>
+                <a href="#"> Личный кабинет </a>
+            </div>
+
+            <div class="flinks2">
+                <h4>Справка</h4>
+                <a href="#"> Гарантии </a>
+                <a href="#"> Политика </a>
+                <a href="#"> Договор оферты </a>
+                <a href="#"> Оплата и доставка </a>
+            </div>
+
+            <div class="flinks3">
+                <h4>Контакты</h4>
+                <p class="foot"> E-mail: primer@mail.ru </p>
+                <p class="foot"> Телефон: +7 123 456-78-90 </p>
+                <div class="icons">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2M4 12a8 8 0 1 1 6.077 7.767l.718-3.374c.687.596 1.54.823 2.359.808c.898-.017 1.8-.32 2.555-.795c.752-.473 1.424-1.16 1.792-2.007A6 6 0 1 0 6.5 14.4a1 1 0 1 0 1.832-.8A4 4 0 1 1 16 12c0 1.095-.41 2.117-1.357 2.713c-.488.308-1.039.48-1.526.488c-.477.01-.842-.134-1.095-.399c-.248-.26-.521-.762-.521-1.702c0-.6.229-1.1.503-2.392a1 1 0 1 0-1.956-.416l-1.86 8.743A8 8 0 0 1 4 12"/></g></svg>
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 5L2 12.5l7 1M21 5l-2.5 15L9 13.5M21 5L9 13.5m0 0V19l3.249-3.277"/></svg>
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 6v5q-4 0-6-2v7a7 7 0 1 1-5-6.7m0 6.7a2 2 0 1 0-2 2a2 2 0 0 0 2-2V1h5q2 5 6 5"/></svg>
+                </div>
+            </div>
+        </footer>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const modal = document.getElementById('thankYouModal');
+                const openModalBtn = document.getElementById('submit-project-btn');
+                const closeBtn = document.querySelector('.close-modal-btn');
+
+                openModalBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const photoInput = document.getElementById('photo');
+                    const itemType = document.getElementById('item-type').value;
+                    
+                    if (photoInput.files.length === 0) {
+                        alert('Пожалуйста, загрузите фотографию вашей вещи');
+                        return;
+                    }
+
+                    if (itemType === 'Выберите из списка') {
+                        alert('Пожалуйста, выберите тип вещи');
+                        return;
+                    }
+
+                    const orderNumber = Math.floor(1000 + Math.random() * 9000);
+                    document.querySelector('.order-number').textContent = '#' + orderNumber;
+
+                    modal.classList.add('show');
+                    document.body.classList.add('modal-open');
+                });
+
+                function closeModal() {
+                    modal.classList.remove('show');
+                    document.body.classList.remove('modal-open');
+                }
+                
+                closeBtn.addEventListener('click', closeModal);
+                
+                modal.addEventListener('click', function(event) {
+                    if (event.target === modal) {
+                        closeModal();
+                    }
+                });
+                
+                document.addEventListener('keydown', function(event) {
+                    if (event.key === 'Escape' && modal.classList.contains('show')) {
+                        closeModal();
+                    }
+                });
+
+                const fileInput = document.getElementById('photo');
+                const fileNameSpan = document.querySelector('.file-name');
+                
+                if (fileInput && fileNameSpan) {
+                    fileInput.addEventListener('change', function() {
+                        if (fileInput.files.length > 0) {
+                            fileNameSpan.textContent = fileInput.files[0].name;
+                        } else {
+                            fileNameSpan.textContent = 'Файл не выбран';
+                        }
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>
